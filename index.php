@@ -24,12 +24,16 @@ require_once("config.php");
 //$aluno->insert();
 //echo $aluno;
 
+//Alterar um usuario
+//$usuario = new Usuario();
+//$usuario->loadById(7);
+//$usuario->update("professor", "!#$@^72");
+//echo $usuario;
+
 $usuario = new Usuario();
-
 $usuario->loadById(7);
-
-$usuario->update("professor", "!#$@^72");
-
+$usuario->delete();
 echo $usuario;
+
 
 ?>
