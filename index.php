@@ -19,10 +19,17 @@ require_once("config.php");
 //$usuario->login("Muhate", "Bind123");
 //echo $usuario;
 
-$aluno = new Usuario("aluno", "@a1un0");
+//Criando um novo usuario
+//$aluno = new Usuario("aluno", "@a1un0");
+//$aluno->insert();
+//echo $aluno;
 
-$aluno->insert();
+$usuario = new Usuario();
 
-echo $aluno;
+$usuario->loadById(7);
+
+$usuario->update("professor", "!#$@^72");
+
+echo $usuario;
 
 ?>
